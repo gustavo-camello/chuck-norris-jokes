@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/8945a0efde.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles.css">
+  <title>Chuck Norris Jokes</title>
+</head>
+<body>
+  
+  <header id="header">
+      <h1><span id="name">Chuck</span>  Norris Jokes</h1>
+      <form action="" id="form-number-jokes">
+        <p>How many jokes do you want to see?</p>
+        <input type="number" id="user-input" value="1">
+        <button id="btn-getJokes" class="btn">Get Jokes</button>
+      </form>
+      <div id="change-name">
+        <p id="return-chuck">Chuck didn't approve it, bring him back!</p>
+        <p id="be-chuck">Want to be Chuck Norris?</p>
+      </div>
+      
+  </header>
+
+  <section id="jokes-list"></section> 
+
+  
+  <!-- Modal to change the name -->
+  <div class="modal-container">
+    
+    <div class="modal-change-name">
+      <div class="modal-header">
+        <span><i class="far fa-window-close button close-btn" id="close-btn"></i></span>
+        <h2>Ok, let's see if you're a badass!</h2>
+      </div>
+  
+      <div class="modal-body">
+        <form>
+          <p>Enter your name:</p>
+          <input type="text" id="new-name" placeholder="Your name here...">
+        </form>
+     
+      <div class="modal-footer">
+        <p>Are you sure?</p>
+        <button id="btn-yes" class="btn modal-btn button">Yes</button>
+      </div>
+  
+    </div>
+  </div>
+  
+
+  <script src="app.js"></script>
+</body>
+</html>
