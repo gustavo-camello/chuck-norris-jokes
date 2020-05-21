@@ -40,7 +40,7 @@
     const numberOfJokes = document.querySelector('#user-input').value;
 
     if (newNameInput.value === ''){
-      fetch(`http://api.icndb.com/jokes/random/${numberOfJokes}`)
+      fetch(`https://api.icndb.com/jokes/random/${numberOfJokes}`)
       .then(response => {
         if(response.ok){
           return response.json();
@@ -62,7 +62,7 @@
         console.log(error);
       })
     }else {
-      fetch(`http://api.icndb.com/jokes/random/${numberOfJokes}?firstName=${newNameInput.value}`)
+      fetch(`https://api.icndb.com/jokes/random/${numberOfJokes}?firstName=${newNameInput.value}`)
       .then(response => {
         if(response.ok){
           return response.json();
